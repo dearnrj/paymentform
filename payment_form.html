@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pay.css">
+
+    <title class="x">PaymentForm</title>
+</head>
+<body>
+    <h1 class="main_heading">Payment Form</h1>
+  <h2>Contact Information</h2>
+  <form action="" class="formsec">
+     <label>Name: * <input type="text" name="nameofperson" id="nameofperson" required ></label> 
+     <label>
+     <fieldset>
+         <legend>Gender</legend>
+         <label>male <input type="radio" name="gender" id="gender">
+            female <input type="radio" name="gender" id="gender">
+     </label>
+     </fieldset>
+    </label>
+     <label>
+         Phone No: * <input type="number" name="phon_number" id="phon_number" required>
+     </label>
+     <label>Pin Code: <input type="number" name="pincode" id="pincode" required></label>
+     <label>Email: * <input type="email" name="usermail" id="usermail" required></label>
+     <label class="y">
+       Address: <textarea name="userarea" id="userarea" cols="100" rows="7"   ></textarea>   
+     </label>
+     <h2>Payment Information</h2>
+     <label>
+         Card Number: * <input type="number" name="card_no" id="card_no" required>
+     </label>
+     <label>CVV: * <input type="password" name="cvvno" id="cvvno" required></label>
+     <label>Expiration Date: * <input type="date" name="exp" id=""> </label>
+     <label>Card Type:
+<select name="Select" id="Select">
+    <option value="rupay">Rupay</option>
+    <option value="mas">MasterCard</option>
+    <option value="visa">Visa</option>
+    <option value="bit">Bitcoin</option>
+</select>
+     </label>
+     <label>Date: <input type="date" name="day" id="day"></label>
+     <input type="submit" value="Pay Now"><br><hr>
+     <input type="reset" value="Reset Now"><br>
+     <input type="file" name="upload" id="upload"><br>
+  </form>
+  <hr>
+  <hr>
+  <footer>The Code is Written By Niraj Kumar</footer>
+</body>
+</html>
